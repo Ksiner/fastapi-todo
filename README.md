@@ -6,7 +6,7 @@ Run the following command in order to run the service:
 
 ```
 # dev mode
-uvicorn main:app --reload
+uvicorn main:app --reload --app-dir src
 ```
 
 ---

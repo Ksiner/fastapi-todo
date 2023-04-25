@@ -24,6 +24,7 @@ def upgrade() -> None:
     op.alter_column(TableNames.USERS.value, "first_name", nullable=True)
     op.alter_column(TableNames.USERS.value, "last_name", nullable=True)
     op.alter_column(TableNames.USERS.value, "created_at", nullable=False)
+    op.create_unique_constraint("uniq_email", TableNames.USERS.value, ["email"])
 
 
 def downgrade() -> None:
