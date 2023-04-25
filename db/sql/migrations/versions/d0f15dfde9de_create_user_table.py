@@ -7,7 +7,7 @@ Create Date: 2023-04-25 15:25:31.868333
 """
 from alembic import op
 import sqlalchemy as sa
-from db.sql.models import TableNames
+from db.sql.core import TableNames
 
 
 # revision identifiers, used by Alembic.

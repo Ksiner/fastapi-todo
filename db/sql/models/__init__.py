@@ -1,4 +1,3 @@
-from .core import Base, SessionLocal
 from enum import Enum
 
 
